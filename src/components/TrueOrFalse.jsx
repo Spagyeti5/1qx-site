@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function TrueOrFalse() {
   return (
     <div className="p-6">
@@ -7,16 +9,17 @@ export default function TrueOrFalse() {
       </p>
       <ul className="list-disc list-inside space-y-2">
         <li>
-          <a href="/true-or-false/science" className="text-orange-600 hover:underline">
+          <Link to="/true-or-false/science" className="text-orange-600 hover:underline">
             Science True or False Quiz
-          </a>
+          </Link>
         </li>
-	<li>
-          <a href="/true-or-false/politics" className="text-orange-600 hover:underline">
+        <li>
+          <Link to="/true-or-false/politics" className="text-orange-600 hover:underline">
             Weird Political Facts
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
   );
 }
+

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Daily() {
   return (
     <div className="p-6">
@@ -7,11 +9,10 @@ export default function Daily() {
       </p>
       <ul className="list-disc list-inside space-y-2">
         <li>
-          <a href="/daily/one-word-challenge" className="text-orange-600 hover:underline">
+          <Link to="/daily/one-word-challenge" className="text-orange-600 hover:underline">
             One Word Challenge Daily
-          </a>
+          </Link>
         </li>
-
       </ul>
     </div>
   );

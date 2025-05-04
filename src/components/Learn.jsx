@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Learn() {
   return (
     <div className="p-6">
@@ -7,13 +9,13 @@ export default function Learn() {
       </p>
       <ul className="list-disc list-inside space-y-2">
         <li>
-         <a href="/maths" className="text-orange-600 hover:underline">
+          <Link to="/maths" className="text-orange-600 hover:underline">
             🧠 Try the Maths Challenge
-              </a>
+          </Link>
         </li>
-
       </ul>
     </div>
   );
 }
+
 

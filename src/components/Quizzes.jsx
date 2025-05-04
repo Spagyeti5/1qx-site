@@ -1,38 +1,36 @@
+import { Link } from 'react-router-dom';
+
 export default function Quizzes() {
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-2xl mx-auto">
       <h1 className="text-3xl font-bold mb-2">Quizzes</h1>
-      <p className="text-gray-700 mb-6 max-w-xl">
-        Test your knowledge with a growing collection of quirky, challenging, and themed quizzes. Whether you're into historical trivia, obscure laws, or scientific oddities, this section has something to surprise you.
+      <p className="text-gray-700 mb-6">
+        A collection of fun, challenging, and sometimes snarky quizzes to test your knowledge on history, inventions, and more.
       </p>
-      <ul className="list-disc list-inside space-y-2">
+      <ul className="space-y-3 list-disc list-inside">
         <li>
-          <a href="/guess-the-invention-year" className="text-orange-600 hover:underline">
+          <Link to="/guess-the-invention-year" className="text-orange-600 hover:underline">
             Guess the Invention Year Quiz
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/uk-history-quiz" className="text-orange-600 hover:underline">
-            UK History Quiz
-          </a>
+          <Link to="/uk-history-quiz" className="text-orange-600 hover:underline">
+            How well do you know UK history?
+          </Link>
         </li>
         <li>
-          <a href="/us-history-quiz" className="text-orange-600 hover:underline">
-            U.S. History Quiz
-          </a>
+          <Link to="/us-history-quiz" className="text-orange-600 hover:underline">
+            How well do you know US history?
+          </Link>
         </li>
         <li>
-          <a href="/true-or-false/science" className="text-orange-600 hover:underline">
-            Science True or False Quiz
-          </a>
-        </li>
-	<li>
-          <a href="/true-or-false/politics" className="text-orange-600 hover:underline">
-            Weird Political Facts
-          </a>
+          <Link to="/maths" className="text-orange-600 hover:underline">
+            Get better at equations?
+          </Link>
         </li>
       </ul>
     </div>
   );
 }
+
 
