@@ -87,7 +87,7 @@ export const inventionQuestions = [
     question: "When was the zipper invented?",
     answers: ["1893", "1913", "1851", "1930"],
     correctAnswer: "1893",
-    fact: "Whitcomb Judson patented the zipper in 1893, though it wasn't popularized until later."
+    fact: "Whitcomb Judson patented the zipper in 1893, though it wasn't popularised until later."
   },
   {
     question: "When was the first microwave oven introduced?",
@@ -120,10 +120,10 @@ export const inventionQuestions = [
     fact: "Christopher Latham Sholes patented the typewriter in 1868."
   },
   {
-    question: "When was aspirin first synthesized?",
+    question: "When was aspirin first synthesised?",
     answers: ["1897", "1875", "1901", "1910"],
     correctAnswer: "1897",
-    fact: "Felix Hoffmann synthesized aspirin at Bayer in 1897."
+    fact: "Felix Hoffmann synthesised aspirin at Bayer in 1897."
   },
   {
     question: "When was the first ATM installed?",
