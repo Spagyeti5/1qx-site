@@ -281,9 +281,9 @@ const oneWordChallengeData = [
       },
       {
         question: "Which insect can walk on water due to surface tension?",
-        answers: ["Dragonfly", "Water strider", "Firefly", "Weevil"],
-        correctAnswer: "Water strider",
-        fact: "Water striders use surface tension to skim across water."
+        answers: ["Dragonfly", "Pond skater", "Firefly", "Weevil"],
+        correctAnswer: "Pond skater",
+        fact: "Pond skaters also know as water striders, water scooters, puddle flies, and water skimmers, use surface tension to skim across water."
       },
       {
         question: "Which insect has a deadly sting and is considered the most dangerous?",

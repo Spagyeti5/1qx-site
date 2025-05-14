@@ -1,7 +1,7 @@
 export const rebusPuzzles = [
   {
     image: "/rebus/rebus1.png",
-    answer: "believe"
+    answer: "belief"
   },
   {
     image: "/rebus/rebus2.png",
