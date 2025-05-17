@@ -25,7 +25,7 @@ export default function Quizzes() {
         </li>
         <li>
           <Link to="/maths" className="text-orange-600 hover:underline">
-            Get better at equations?
+            Get better at equations
           </Link>
         </li>
       </ul>

@@ -32,6 +32,9 @@ function Homepage() {
         <Link to="/games/insultle" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
           Insultle Word Game
         </Link>
+        <Link to="/pirate-memory-game" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
+          Pirate Memory Game
+        </Link>
       </div>
       <div className="text-center mt-6">
         <Link to="/">

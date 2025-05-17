@@ -19,6 +19,7 @@ import TrueFalse from './components/TrueOrFalse';
 import Learn from './components/Learn';
 import Daily from './components/Daily';
 import ThanksPage from './components/ThanksPage';
+import PirateMemoryGame from './components/PirateMemoryGame';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path="/daily" element={<Daily />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/thanks" element={<ThanksPage />} />
+	    <Route path="/pirate-memory-game" element={<PirateMemoryGame />} />
           </Routes>
         </main>
       </div>

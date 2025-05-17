@@ -13,8 +13,14 @@ export default function Puzzles() {
             Rebus Challenge - What is the phrase hidden in the image?
           </Link>
         </li>
+        <li>
+          <Link to="/pirate-memory-game" className="text-orange-600 hover:underline">
+            Pirate Memory Game - Match the pairs and find the hidden treasure!
+          </Link>
+        </li>
       </ul>
     </div>
   );
 }
+
 

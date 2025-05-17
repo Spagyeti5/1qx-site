@@ -27,19 +27,21 @@ function Sidebar() {
     '/daily': [
       { to: '/daily/one-word-challenge', label: 'One Word Challenge' },
     ],
-    '/puzzles': [
+'/puzzles': [
       { to: '/rebus', label: 'Rebus Puzzle' },
+      { to: '/pirate-memory-game', label: 'Pirate Memory Game' },
     ],
     '/learn': [
-      { to: '/maths', label: 'Maths Challenge' }
+      { to: '/maths', label: 'Maths Challenge' },
     ],
     '/word-games': [
-      { to: '/games/insultle', label: 'Insultle' }
+      { to: '/games/insultle', label: 'Insultle' },
     ]
   };
 
   const defaultLinks = [
     { to: '/games/insultle', label: 'Featured Game: Insultle' },
+    { to: '/pirate-memory-game', label: 'New Puzzle: Pirate Memory Game' },
     { to: '/rebus', label: 'Try a Rebus' },
     { to: '/guess-the-invention-year', label: 'When was it invented?' },
     { to: '/true-or-false/science', label: 'Science - True or False' },
