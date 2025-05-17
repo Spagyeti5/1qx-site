@@ -20,6 +20,9 @@ const pirateWrongComments = [
   "Not quite, ye scallywag!",
   "Blimey, that’s not it!",
   "Even a blind pirate’d do better!",
+  "You'll never find the gold at this rate!",
+  "My parrot could do better than that!",
+  "You're just guessing aren't yah?",
   "No gold for that guess, landlubber!"
 ];
 
@@ -77,6 +80,8 @@ export default function PirateMemoryGame() {
   function playPirateSound() {
     const pirateSounds = [
       "/sounds/pirate1.mp3",
+      "/sounds/pirate3.wav",
+      "/sounds/pirate4.mp3",
       "/sounds/pirate2.wav"
     ];
     const chosen = pirateSounds[Math.floor(Math.random() * pirateSounds.length)];
