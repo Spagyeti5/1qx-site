@@ -173,9 +173,9 @@ export default function RobotBallGame({ onEnd }) {
 
     // Wager payout multipliers
     let wagerMultipliers = {
-      red: 1.25,
-      blue: 2.5,
-      orange: 3
+      red: 1.5,
+      blue: 3,
+      orange: 5
     };
 
     // Ball allocation logic
