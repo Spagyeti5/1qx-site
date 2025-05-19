@@ -35,13 +35,16 @@ function Homepage() {
         <Link to="/pirate-memory-game" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
           Pirate Memory Game
         </Link>
+          <Link to="/robot-ball" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
+             A Robot Stole My Ball!
+        </Link>
       </div>
       <div className="text-center mt-6">
         <Link to="/">
           <img src="/Orangelogo.png" alt="1qx logo" className="h-16 hover:opacity-90 transition-opacity mx-auto" />
         </Link>
       </div>
-      <footer className="mt-16 text-gray-600 text-sm">© 2025 1qx.com — Play, Learn, Puzzle.</footer>
+      <footer className="mt-16 text-gray-600 text-sm">© 2025 1qx.com - Play, Learn, Puzzle.</footer>
     </div>
   );
 }

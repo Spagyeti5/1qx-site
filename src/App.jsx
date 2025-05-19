@@ -20,6 +20,10 @@ import Learn from './components/Learn';
 import Daily from './components/Daily';
 import ThanksPage from './components/ThanksPage';
 import PirateMemoryGame from './components/PirateMemoryGame';
+import RobotBallIntro from './components/RobotBallIntro';
+import RobotBallGame from './components/RobotBallGame';
+import RobotBallResult from './components/RobotBallResult';
+import RobotBallWrapper from './components/RobotBallWrapper';
 
 function App() {
   return (
@@ -48,6 +52,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/thanks" element={<ThanksPage />} />
 	    <Route path="/pirate-memory-game" element={<PirateMemoryGame />} />
+            <Route path="/robot-ball" element={<RobotBallIntro />} />
+            <Route path="/robot-ball/game" element={<RobotBallWrapper />} />
           </Routes>
         </main>
       </div>

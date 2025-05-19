@@ -9,6 +9,11 @@ export default function Learn() {
       </p>
       <ul className="list-disc list-inside space-y-2">
         <li>
+          <Link to="/robot-ball" className="text-orange-600 hover:underline">
+             A Robot Stole My Ball!
+           </Link>
+        </li>
+        <li>
           <Link to="/maths" className="text-orange-600 hover:underline">
             🧠 Try the Maths Challenge
           </Link>
@@ -17,5 +22,4 @@ export default function Learn() {
     </div>
   );
 }
-
 

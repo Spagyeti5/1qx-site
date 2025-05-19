@@ -32,6 +32,7 @@ function Sidebar() {
       { to: '/pirate-memory-game', label: 'Pirate Memory Game' },
     ],
     '/learn': [
+      { to: '/robot-ball', label: 'A Robot Stole My Ball!' },
       { to: '/maths', label: 'Maths Challenge' },
     ],
     '/word-games': [
@@ -41,7 +42,8 @@ function Sidebar() {
 
   const defaultLinks = [
     { to: '/games/insultle', label: 'Featured Game: Insultle' },
-    { to: '/pirate-memory-game', label: 'New Puzzle: Pirate Memory Game' },
+    { to: '/robot-ball', label: 'New: A Robot Stole My Ball!' },
+    { to: '/pirate-memory-game', label: 'New: Pirate Memory Game' },
     { to: '/rebus', label: 'Try a Rebus' },
     { to: '/guess-the-invention-year', label: 'When was it invented?' },
     { to: '/true-or-false/science', label: 'Science - True or False' },
