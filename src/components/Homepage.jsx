@@ -44,7 +44,7 @@ function Homepage() {
           <img src="/Orangelogo.png" alt="1qx logo" className="h-16 hover:opacity-90 transition-opacity mx-auto" />
         </Link>
       </div>
-      <footer className="mt-16 text-gray-600 text-sm">© 2025 1qx.com - Play, Learn, Puzzle.</footer>
+      <footer className="mt-4 text-gray-600 text-sm">© 2025 1qx.com - Play, Learn, Puzzle.</footer>
     </div>
   );
 }

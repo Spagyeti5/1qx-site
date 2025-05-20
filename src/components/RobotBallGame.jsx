@@ -351,7 +351,7 @@ You got a ${playerGot} ball instead. Estimated chance of getting your pick: ${(e
                   <span>
                     <b>Special final round!</b> There are now <b>5 orange balls</b> available.
                     <br />
-                    Orange balls are worth <b>massive points</b>—but there are even fewer to go around, and robots may target them!
+                    Orange balls are worth <b>massive points</b>- but there are even fewer to go around, and robots may target them!
                     <br />
                     Choose wisely. Good luck!
                   </span>
