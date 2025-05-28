@@ -38,6 +38,9 @@ function Homepage() {
           <Link to="/robot-ball" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
              A Robot Stole My Ball!
         </Link>
+	  <Link to="/misunderstood-phrases" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
+	    Misunderstood Phrases Quiz
+        </Link>
       </div>
       <div className="text-center mt-6">
         <Link to="/">

@@ -24,6 +24,7 @@ import RobotBallIntro from './components/RobotBallIntro';
 import RobotBallGame from './components/RobotBallGame';
 import RobotBallResult from './components/RobotBallResult';
 import RobotBallWrapper from './components/RobotBallWrapper';
+import MisunderstoodPhrasesQuiz from './components/MisunderstoodPhrasesQuiz';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
 	    <Route path="/pirate-memory-game" element={<PirateMemoryGame />} />
             <Route path="/robot-ball" element={<RobotBallIntro />} />
             <Route path="/robot-ball/game" element={<RobotBallWrapper />} />
+            <Route path="/misunderstood-phrases" element={<MisunderstoodPhrasesQuiz />} />
           </Routes>
         </main>
       </div>

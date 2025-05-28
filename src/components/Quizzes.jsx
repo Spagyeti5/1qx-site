@@ -28,6 +28,11 @@ export default function Quizzes() {
             Get better at equations
           </Link>
         </li>
+<li>
+  <Link to="/misunderstood-phrases" className="text-orange-600 hover:underline">
+    Misunderstood Phrases Quiz
+  </Link>
+</li>
       </ul>
     </div>
   );
