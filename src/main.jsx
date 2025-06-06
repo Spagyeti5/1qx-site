@@ -4,21 +4,18 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import './styles.css';
 
-// Inject Statcounter script (invisible)
+// Properly inject Statcounter script (no document.write)
 const statScript = document.createElement('script');
-statScript.type = 'text/javascript';
-statScript.innerHTML = `
-  var sc_project = 1019245;
-  var sc_invisible = 1;
-  var sc_security = "631c69a7";
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" +
-    scJsHost +
-    "statcounter.com/counter/counter.js'></"+"script>");
-`;
+statScript.src = 'https://statcounter.com/counter/counter.js';
+statScript.async = true;
 document.body.appendChild(statScript);
 
-// Add noscript fallback (invisible)
+// Set required global vars before script loads
+window.sc_project = 1019245;
+window.sc_invisible = 1;
+window.sc_security = '631c69a7';
+
+// Add <noscript> fallback
 const noscript = document.createElement('noscript');
 noscript.innerHTML = `
   <div class="statcounter">
@@ -36,3 +33,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </Router>
   </React.StrictMode>
 );
+
