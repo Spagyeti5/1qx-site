@@ -25,6 +25,10 @@ import RobotBallGame from './components/RobotBallGame';
 import RobotBallResult from './components/RobotBallResult';
 import RobotBallWrapper from './components/RobotBallWrapper';
 import MisunderstoodPhrasesQuiz from './components/MisunderstoodPhrasesQuiz';
+import AlienQuiz from './components/AlienQuiz';
+import NotFound from './components/NotFound';
+import Blog from './pages/Blog';
+import BlogPost from './components/BlogPost';
 
 function App() {
   return (
@@ -56,6 +60,10 @@ function App() {
             <Route path="/robot-ball" element={<RobotBallIntro />} />
             <Route path="/robot-ball/game" element={<RobotBallWrapper />} />
             <Route path="/misunderstood-phrases" element={<MisunderstoodPhrasesQuiz />} />
+            <Route path="/galactic-intelligence-survey/:difficulty" element={<AlienQuiz type="mixed" />} />           
+            <Route path="*" element={<NotFound />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </main>
       </div>

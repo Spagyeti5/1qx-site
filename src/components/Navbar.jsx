@@ -14,6 +14,7 @@ export default function Navbar() {
           <Link to="/word-games" className="hover:underline">Word Games</Link>
           <Link to="/true-or-false" className="hover:underline">True or False</Link>
           <Link to="/learn" className="hover:underline">Learn</Link>
+          <Link to="/blog" className="hover:underline">Blog</Link>
           <Link to="/contact" className="hover:underline">Contact</Link>
         </div>
       </div>
