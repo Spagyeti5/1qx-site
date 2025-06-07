@@ -3,6 +3,10 @@ import usHistoryQuestions from '../data/usHistoryQuestions';
 import { Link } from 'react-router-dom';
 
 function USHistoryQuiz() {
+useEffect(() => {
+  document.title = 'US History Quiz Questions - 1qx.com';
+}, []);
+
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);

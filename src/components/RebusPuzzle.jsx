@@ -3,6 +3,10 @@ import { rebusPuzzles } from '../data/rebusPuzzles';
 import { Link } from 'react-router-dom';
 
 function RebusPuzzle() {
+useEffect(() => {
+  document.title = 'Rebus Puzzle - Guess the phrase hidden in the image - 1qx.com';
+}, []);
+
   const [puzzles, setPuzzles] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userInput, setUserInput] = useState('');

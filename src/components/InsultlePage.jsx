@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import wordList from '../data/insultleWords';
 import { Link } from 'react-router-dom';
 
@@ -43,6 +43,10 @@ function playSound(type) {
 }
 
 export default function InsultlePage() {
+useEffect(() => {
+  document.title = 'Insultle - Find the insult word game - 1qx.com';
+}, []);
+
   const wordRef = useRef(getRandomWord());
   const targetWord = wordRef.current;
 

@@ -3,6 +3,10 @@ import ukHistoryQuestions from '../data/ukHistoryQuestions';
 import { Link } from 'react-router-dom';
 
 function UKHistoryQuiz() {
+useEffect(() => {
+  document.title = 'UK History Quiz Questions - 1qx.com';
+}, []);
+
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);

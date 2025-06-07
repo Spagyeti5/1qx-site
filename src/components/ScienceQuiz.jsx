@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import scienceFacts from '../data/scienceFacts';
 
 export default function ScienceQuiz() {
+useEffect(() => {
+  document.title = 'Science True or False Quiz - 1qx.com';
+}, []);
+
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);

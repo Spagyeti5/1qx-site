@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import mathsQuestions from '../data/mathsQuestions';
 import { Link } from 'react-router-dom';
 
@@ -23,6 +23,10 @@ const snarkyWrong = [
 ];
 
 const MathsQuiz = () => {
+useEffect(() => {
+  document.title = 'Maths Challenge - 1qx.com';
+}, []);
+
   const [questions, setQuestions] = useState([]);
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState(null);

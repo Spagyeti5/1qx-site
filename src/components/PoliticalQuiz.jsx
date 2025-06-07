@@ -1,8 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import politicalFacts from '../data/politicalFacts';
 
 export default function PoliticalQuiz() {
+useEffect(() => {
+  document.title = 'Political True or False Quiz - Weird Political Controversies - 1qx.com';
+}, []);
+
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import oneWordChallengeData from '../data/oneWordChallengeData';
 import { Link } from 'react-router-dom';
 
@@ -55,6 +55,10 @@ const getRandomSnarkyComment = (isCorrect) => {
 };
 
 function OneWordChallenge() {
+useEffect(() => {
+  document.title = 'One Word Daily Challenge Quiz - 1qx.com';
+}, []);
+
   const todayIndex = new Date().getDate() % oneWordChallengeData.length;
   const challenge = oneWordChallengeData[todayIndex];
 

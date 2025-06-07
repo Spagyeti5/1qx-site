@@ -1,8 +1,11 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function RobotBallIntro() {
+useEffect(() => {
+  document.title = 'A Robot Stole My Ball - Outsmart the robots to win - 1qx.com';
+}, []);
+
   const navigate = useNavigate();
 
   return (

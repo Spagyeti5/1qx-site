@@ -1,9 +1,13 @@
 // MisunderstoodPhrasesQuiz.jsx
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import misunderstoodQuestions from '../data/misunderstoodQuestions'; // Adjust the import path if needed
 import { Link } from 'react-router-dom';
 
 function MisunderstoodPhrasesQuiz() {
+useEffect(() => {
+  document.title = 'Misunderstood Phrases Quiz - 1qx.com';
+}, []);
+
   const questions = misunderstoodQuestions.slice(0, 30); // Fixed 30 in order
 
   const [currentIndex, setCurrentIndex] = useState(0);

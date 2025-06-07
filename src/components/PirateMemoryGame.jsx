@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 // Placeholders for card symbols (swap these for pirate SVGs later!)
 const symbols = [
@@ -50,6 +50,10 @@ function shuffle(array) {
 }
 
 export default function PirateMemoryGame() {
+useEffect(() => {
+  document.title = 'Pirate Memory Game - Can You Find the Treasure? - 1qx.com';
+}, []);
+
   // Game phases: memory, treasure, win, lose
   const [gameStage, setGameStage] = useState("memory");
   const [cards, setCards] = useState(() => shuffle(symbols));

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 const blogContent = {
@@ -249,6 +250,12 @@ Reviving the mail-order mindset in the digital world might be your most profitab
 export default function BlogPost() {
   const { slug } = useParams();
   const post = blogContent[slug];
+
+  useEffect(() => {
+    if (post?.title) {
+      document.title = `${post.title} - 1qx.com`;
+    }
+  }, [post]);
 
   if (!post) {
     return (

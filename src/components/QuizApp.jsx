@@ -3,6 +3,10 @@ import { inventionQuestions } from '../data/quizQuestions';
 import { Link } from 'react-router-dom';
 
 function QuizApp() {
+  useEffect(() => {
+    document.title = 'Guess the Invention Year - 1qx.com';
+  }, []);
+
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);

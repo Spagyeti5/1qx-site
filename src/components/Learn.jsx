@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Learn() {
+useEffect(() => {
+  document.title = 'Learn with Games, Quizzes, and Puzzles - 1qx.com';
+}, []);
+
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-2">Learn</h1>

@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Quizzes() {
+useEffect(() => {
+  document.title = 'Quizzes - Challenge Yourself with a Quiz - 1qx.com';
+}, []);
+
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-2">Quizzes</h1>

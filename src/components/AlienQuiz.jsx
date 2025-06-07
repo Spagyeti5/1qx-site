@@ -38,6 +38,10 @@ const snarkyWrong = [
 ];
 
 export default function AlienQuiz() {
+useEffect(() => {
+  document.title = 'Galactic Intelligence Survey - 1qx.com';
+}, []);
+
   const [difficulty, setDifficulty] = useState(null);
   const [questions, setQuestions] = useState([]);
   const [current, setCurrent] = useState(0);

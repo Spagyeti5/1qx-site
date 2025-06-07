@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function WordGames() {
+useEffect(() => {
+  document.title = 'Word Games - 1qx.com';
+}, []);
+
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-2">Word Games</h1>
