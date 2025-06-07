@@ -1,6 +1,11 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Homepage() {
+useEffect(() => {
+  document.title = 'Challenge Yourself with an Unusual Quiz, Puzzle, or Word Game - 1qx.com';
+}, []);
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-orange-50 p-8">
       <h1 className="text-4xl font-bold text-orange-500 mb-8">Welcome to 1qx.com!</h1>
