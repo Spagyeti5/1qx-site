@@ -2,6 +2,88 @@ import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 const blogContent = {
+"memory-games": {
+  title: "Can Memory Games Help Prevent Memory Problems as You Age?",
+  date: "8 June 2025",
+  content: (
+    <>
+      <p>
+        It’s no secret that ageing can bring about a few forgetful moments. Where are the keys? Why did I walk into this room? It's something we can all suffer from, but when witnessing this happening to a loved one, it can be distressing.
+              </p>
+      <p>Watching a relative slowly deteriorate, to the point where they can no longer take care of themselves is difficult. So, are there things you can do to slow down these age-related memory issues, or even prevent them from happening in the first place?
+      </p>
+      <p>You might have heard that <strong>playing memory games might actually help keep your brain sharp</strong> - and even delay memory-related conditions like dementia, but can it really help?
+      </p>
+      <p>
+        There's been plenty of research into how memory games can help and how giving your brain a daily challenge could pay off in the long run. Let's take a look.
+      </p>
+
+      <h2 className="text-xl font-bold mt-6 mb-2">🧠 The Brain is a Muscle (Sort of)</h2>
+      <p>
+        Your brain thrives on use. Just like physical exercise strengthens your body, <strong>mental workouts keep your cognitive abilities in shape</strong>.
+        From matching pirate symbols to solving word puzzles, the goal is the same: <strong>engage your memory, logic, and attention</strong>.
+      </p>
+
+      <h2 className="text-xl font-bold mt-6 mb-2">📚 What the Research Says</h2>
+      <p>
+        Here are four landmark studies that show how memory training can help prevent cognitive decline:
+      </p>
+      <ul className="list-disc list-inside space-y-2 ml-4">
+        <li>
+          <strong>ACTIVE Study (2002) - Effects of Cognitive Training Interventions With Older Adults: A Randomised Controlled Trial</strong>: Nearly 3,000 adults aged 65 and older were given 10 training sessions in either memory, reasoning, or processing information speed. There were clear improvements in the subjects where training was given, and this lasted for up to 10 years, as shown in follow-up studies.
+          <em> (Ball et al., JAMA)</em>
+        </li>
+        <li>
+          <strong>Neurocognitive Scaffolding (2009) - The Adaptive Brain: Aging and Neurocognitive Scaffolding</strong>: This paper introduces the idea that as we age and cognitively decline, we form backup connections. Engaging additional regions of the brain can be created and strengthened through playing memory games and similar activities that reinforce these links.
+          <em> (Park & Reuter-Lorenz)</em>
+        </li>
+        <li>
+          <strong>Meta-Analysis (2014) - Computerised Cognitive Training in Cognitively Healthy Older Adults: A Systematic Review and Meta-Analysis</strong>: This research looked at 52 studies where computer-based training improved memory and processing speed, especially when brief and frequent. The findings show that sessions under 30 minutes are better, but they should be frequent and require adaptation.
+          <em> (Lampit et al.)</em>
+        </li>
+        <li>
+          <strong>Word Puzzle Use (2019) - Frequency of Word Puzzle Use is Associated With Cognitive Function in a Large Online Sample of Older Adults</strong>: In a survey of 19,000+ adults aged 50+, frequent puzzle solvers showed better overall cognitive function. It showed better memory, reasoning, and attention. And also showed that the more frequently people played, the better their results.
+          <em> (Williams et al., Int. J. Geriatric Psychiatry)</em>
+        </li>
+      </ul>
+
+      <h2 className="text-xl font-bold mt-6 mb-2">🎮 Try a Game Now</h2>
+      <p>
+        You can boost your brainpower right now with our{" "}
+        <Link to="/pirate-memory-game" className="text-orange-600 hover:underline font-semibold">
+          Pirate Memory Game
+        </Link>{" "}
+        - match pairs and find hidden treasure in a fun, pirate-themed challenge! We also have other fun games to test and enhance your puzzle-solving abilities.
+      </p>
+
+      <h2 className="text-xl font-bold mt-6 mb-2">✅ Tips to Keep Your Brain Fit</h2>
+      <ul className="list-disc list-inside space-y-2 ml-4">
+        <li>Play daily - even 10–15 minutes helps</li>
+        <li>Mix up game types - logic, memory, word, and visual games</li>
+        <li>Increase difficulty gradually to encourage adaptation</li>
+        <li>Play socially - games with friends or family boost engagement</li>
+      </ul>
+
+      <h2 className="text-xl font-bold mt-6 mb-2">🎉 Final Thoughts</h2>
+      <p>
+        Cognitive decline isn’t inevitable. With consistent mental exercise - especially the kind that’s genuinely fun -
+        <strong> you can help your brain stay sharp, engaged, and curious well into later life</strong>.
+      </p>
+      <p>
+        So next time you crack a quiz or match some symbols, remember, <strong>you’re not just playing - you’re training your brain</strong>.
+      </p>
+
+      <div className="mt-4 text-sm text-gray-500">
+        <strong>Tags:</strong>{" "}
+        <span className="text-orange-600">#MemoryGames</span>,{" "}
+        <span className="text-orange-600">#HealthyAging</span>,{" "}
+        <span className="text-orange-600">#BrainTraining</span>,{" "}
+        <span className="text-orange-600">#Neuroplasticity</span>
+      </div>
+    </>
+  )
+},
+
   "lie": {
     title: "When is Someone Lying to You?",
     date: "6 June 2025",

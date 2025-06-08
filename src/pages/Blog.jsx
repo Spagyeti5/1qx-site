@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 
 const blogPosts = [
   {
+    slug: "memory-games",
+    title: "Can Memory Games Help Prevent Memory Problems as You Age?",
+    date: "8 June 2025",
+  },
+  {
     slug: "lie",
     title: "When is Someone Lying to You?",
     date: "6 June 2025",

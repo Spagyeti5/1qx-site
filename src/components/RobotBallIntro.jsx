@@ -26,7 +26,9 @@ useEffect(() => {
           <br /><br />
           Your position in the queue to pick your preferred ball is random. The earlier you are, the more likely you are to get your chosen ball. Robots might act unpredictably, especially if you’re doing well.
           <br /><br />
-          If you’re feeling confident, you can wager some points for a bigger win. Need help? Spend points for a hint about the robots’ behaviour.
+          If you’re feeling confident, you can wager some points for a bigger win. Wager on a blue ball for a 3x return, but a red will only give you 1.5x the bet.
+          <br /><br />
+          Need help? Spend points for a hint about the robots’ behaviour.
           <br /><br />
           Outsmart the robots, collect the best balls, and see how high you can score!
         </p>

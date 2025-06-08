@@ -219,21 +219,25 @@ useEffect(() => {
             borderRadius: 24, boxShadow: "0 6px 24px rgba(0,0,0,0.15)"
           }}>
           <div className="absolute inset-0 grid grid-cols-6 grid-rows-6 gap-2">
-            {cards.map((card, idx) => (
-              <button
-                key={card.id}
-                onClick={() => handleFlip(idx)}
-                disabled={card.flipped || card.matched || flipped.length === 2 || boardLocked}
-                className={`w-16 h-16 sm:w-20 sm:h-20 rounded-lg shadow text-2xl sm:text-3xl font-bold flex items-center justify-center 
-                  ${card.flipped || card.matched
-                    ? "bg-white border-4 border-orange-400"
-                    : "bg-orange-200 hover:bg-orange-300"}
-                `}
-                style={{ transition: "background 0.25s, border 0.25s" }}
-              >
-                {card.flipped || card.matched ? card.symbol : "?"}
-              </button>
-            ))}
+{cards.map((card, idx) =>
+  card.matched ? (
+    <div key={card.id} /> // empty space to keep grid position
+  ) : (
+    <button
+      key={card.id}
+      onClick={() => handleFlip(idx)}
+      disabled={card.flipped || flipped.length === 2 || boardLocked}
+      className={`w-16 h-16 sm:w-20 sm:h-20 rounded-lg shadow text-2xl sm:text-3xl font-bold flex items-center justify-center 
+        ${card.flipped
+          ? "bg-white border-4 border-orange-400"
+          : "bg-orange-200 hover:bg-orange-300"}
+      `}
+      style={{ transition: "background 0.25s, border 0.25s" }}
+    >
+      {card.flipped ? card.symbol : "?"}
+    </button>
+  )
+)}
           </div>
         </div>
       )}
