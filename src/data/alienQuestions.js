@@ -418,7 +418,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "medium",
   question: "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?",
-  answer: "echo",
+  answer: ["echo", "an echo"],
   explanation: "An echo is sound that reflects, has no body or mouth, and depends on the environment."
 },
 {
@@ -590,7 +590,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "medium",
   question: "A man pushes his car to a hotel and tells the owner he’s bankrupt. What is he doing?",
-  answer: "playing monopoly",
+  answer: ["playing monopoly", "monopoly"],
   explanation: "It's a reference to the board game Monopoly."
 },
 {
@@ -750,14 +750,14 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "hard",
   question: "A 20% discount followed by a 20% increase is equal to what net percentage change?",
-  answer: -4,
+  answer: [-4, "-4%"],
   explanation: "Start with £100. 20% off = £80. 20% increase = £96. Net change = -4%."
 },
 {
   type: "logic",
   difficulty: "hard",
   question: "You have 3 boxes: one with apples, one with oranges, and one with both. All labels are wrong. You can pick one fruit from one box. How do you identify all boxes?",
-  answer: ["pick from the box labelled both", "pick from the box labeled both", "choose from the box labelled both", "choose from the box labeled both", "pick the box with both", "pick the box with both apples and oranges", "pick the box with both oranges and apples", "choose the mislabelled mixed box", "choose the mislabeled mixed box", "choose both", "choose the both box", "pick from the both box", "pick the both box", "pick both", "choose from the third box", "pick from the third box"],
+  answer: ["pick from the box labelled both", "pick from the box labeled both", "choose from the box labelled both", "pick the mixed box", choose the mixed box", "choose from the box labeled both", "pick the box with both", "pick the box with both apples and oranges", "pick the box with both oranges and apples", "choose the mislabelled mixed box", "choose the mislabeled mixed box", "choose both", "choose the both box", "pick from the both box", "pick the both box", "pick both", "choose from the third box", "pick from the third box"],
   explanation: "Pick from the box labelled 'both'. Whatever you get is what’s inside. Use logic to fix the rest."
 },
 {
@@ -1030,7 +1030,7 @@ const alienQuestions = [
 {
   type: "logic",
   difficulty: "hard",
-  question: "Which four-letter word becomes shorter when you add two letters to it?",
+  question: "Which five-letter word becomes shorter when you add two letters to it?",
   answer: "short",
   explanation: "The word 'short' becomes 'shorter' when you add 'e' and 'r'."
 },
@@ -1052,7 +1052,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "hard",
   question: "A man is looking at a photograph. He says, 'Brothers and sisters, I have none, but that man's father is my father's son.' Who is in the photograph?",
-  answer: "his son",
+  answer: ["his son", "son"],
   explanation: "'My father's son' = himself. So, 'that man's father' is himself → the man is his son."
 },
 {
@@ -1066,8 +1066,8 @@ const alienQuestions = [
   type: "logic",
   difficulty: "hard",
   question: "How many squares are there on a standard chessboard?",
-  answer: 204,
-  explanation: "There are 64 (1×1) + 49 (2×2) + 36 (3×3) + ... + 1 (8×8) = 204 squares in total."
+  answer: 64,
+  explanation: "There are 64 squares (8×8) on the chessboard."
 },
 {
   type: "numerical",

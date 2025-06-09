@@ -157,7 +157,7 @@ const isCorrect = Array.isArray(q.answer)
             ))}
           </div>
           <p className="text-gray-700 mb-6 max-w-lg mx-auto"><br />
-            No pressure, the future of the human race on the Earth isn't at steak. If someone told you that it was, it's fake news, don't listen to them.
+            No pressure, the future of the human race on the Earth isn't at stake. If someone told you that it was, it's fake news, don't listen to them.
           </p>
           <p className="text-gray-700 mb-6 max-w-lg mx-auto">
             These are just logical and numerical reasoning questions to help us get a better understanding of the human race, and their worth. We are definitely not going to exterminate humans, <strong>WE ARE NICE!</strong>
