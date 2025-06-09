@@ -757,7 +757,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "hard",
   question: "You have 3 boxes: one with apples, one with oranges, and one with both. All labels are wrong. You can pick one fruit from one box. How do you identify all boxes?",
-  answer: ["pick from the box labelled both", "pick from the box labeled both", "choose from the box labelled both", "pick the mixed box", choose the mixed box", "choose from the box labeled both", "pick the box with both", "pick the box with both apples and oranges", "pick the box with both oranges and apples", "choose the mislabelled mixed box", "choose the mislabeled mixed box", "choose both", "choose the both box", "pick from the both box", "pick the both box", "pick both", "choose from the third box", "pick from the third box"],
+  answer: ["pick from the box labelled both", "pick from the box labeled both", "choose from the box labelled both", "pick the mixed box", choose the mixed box", "choose from the box labeled both", "pick the box with both", "pick the box with both apples and oranges", "pick the box with both oranges and apples", "choose the mislabelled mixed box", "choose the mislabeled mixed box", "choose both", "choose the both box", "pick from the both box", "pick the both box", "pick both", "choose from the third box", "pick from the third box"], 
   explanation: "Pick from the box labelled 'both'. Whatever you get is what’s inside. Use logic to fix the rest."
 },
 {
