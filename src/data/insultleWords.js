@@ -42,6 +42,7 @@ const wordList = [
   { word: 'shabbaroon', definition: 'A shabbily dressed person; possibly mean-spirited.' },
   { word: 'sod', definition: 'A stupid or annoying person.' },
   { word: 'fussock', definition: 'A lazy fat woman.' },
+  { word: 'gobshite', definition: 'Someone who engages in nonsensical chatter or starts unwanted conversations. Also, an unpleasant character with poor judgement.' },
   { word: 'coxcombry', definition: 'The behaviour or dress of a vain man; excessive foppishness.' }
 ];
 

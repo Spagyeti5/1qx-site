@@ -23,6 +23,11 @@ useEffect(() => {
             🧠 Try the Maths Challenge
           </Link>
         </li>
+        <li>
+          <Link to="/galactic-intelligence-survey/easy" className="text-orange-600 hover:underline">
+            Galactic Intelligence Survey - Logical and Numerical Reasoning
+         </Link>
+        </li>
       </ul>
     </div>
   );

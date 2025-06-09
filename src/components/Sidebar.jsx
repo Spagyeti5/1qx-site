@@ -43,8 +43,9 @@ function Sidebar() {
 
   const defaultLinks = [
     { to: '/games/insultle', label: 'Featured Game: Insultle' },
+    { to: '/galactic-intelligence-survey/easy', label: 'New: Logical and Numerical Reasoning Questions' },
     { to: '/robot-ball', label: 'New: A Robot Stole My Ball!' },
-    { to: '/pirate-memory-game', label: 'New: Pirate Memory Game' },
+    { to: '/pirate-memory-game', label: 'Pirate Memory Game' },
     { to: '/misunderstood-phrases', label: 'Misunderstood Phrases Quiz' },
     { to: '/rebus', label: 'Try a Rebus' },
     { to: '/guess-the-invention-year', label: 'When was it invented?' },

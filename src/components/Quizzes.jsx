@@ -33,11 +33,6 @@ useEffect(() => {
             Get better at equations
           </Link>
         </li>
-        <li>
-          <Link to="/galactic-intelligence-survey/easy" className="text-orange-600 hover:underline">
-            Galactic Intelligence Survey (Easy)
-         </Link>
-        </li>
 <li>
   <Link to="/misunderstood-phrases" className="text-orange-600 hover:underline">
     Misunderstood Phrases Quiz

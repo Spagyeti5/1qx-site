@@ -21,7 +21,7 @@ const blogContent = {
       <h2 className="text-xl font-bold mt-6 mb-2">🧠 The Brain is a Muscle (Sort of)</h2>
       <p>
         Your brain thrives on use. Just like physical exercise strengthens your body, <strong>mental workouts keep your cognitive abilities in shape</strong>.
-        From matching pirate symbols to solving word puzzles, the goal is the same: <strong>engage your memory, logic, and attention</strong>.
+        From matching pirate symbols to solving word puzzles, the goal is the same; <strong>engage your memory, logic, and attention</strong>.
       </p>
 
       <h2 className="text-xl font-bold mt-6 mb-2">📚 What the Research Says</h2>

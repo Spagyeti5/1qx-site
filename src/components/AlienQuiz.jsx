@@ -21,7 +21,7 @@ const snarkyCorrect = [
   'You may continue your Earth existence.',
   'Your neural network performs adequately.',
   'Perhaps Earth is not entirely doomed.',
-  'We shall delay invasion—for now.',
+  'We shall delay invasion - for now.',
   'Unexpected. Intriguing.',
   'Intellect confirmed. Proceed.'
 ];
@@ -89,8 +89,12 @@ useEffect(() => {
       countdownAudioRef.current.currentTime = 0;
     }
     const q = questions[current];
-    const cleanedAnswer = String(userAnswer).replace(/^£/, '').trim();
-    const isCorrect = cleanedAnswer === String(q.answer);
+const normalise = (input) =>
+  String(input).toLowerCase().replace(/[^a-z0-9£p.%\/-]/gi, '').trim();
+
+const isCorrect = Array.isArray(q.answer)
+  ? q.answer.map(normalise).includes(normalise(userAnswer))
+  : normalise(userAnswer) === normalise(q.answer);
     if (isCorrect) setScore(s => s + 1);
     setFeedback({
       result: isCorrect ? 'Correct!' : 'Wrong!',
@@ -152,6 +156,12 @@ useEffect(() => {
               </button>
             ))}
           </div>
+          <p className="text-gray-700 mb-6 max-w-lg mx-auto"><br />
+            No pressure, the future of the human race on the Earth isn't at steak. If someone told you that it was, it's fake news, don't listen to them.
+          </p>
+          <p className="text-gray-700 mb-6 max-w-lg mx-auto">
+            These are just logical and numerical reasoning questions to help us get a better understanding of the human race, and their worth. We are definitely not going to exterminate humans, <strong>WE ARE NICE!</strong>
+          </p>
         </div>
         <div className="mt-6">
           <Link to="/">
@@ -178,13 +188,20 @@ useEffect(() => {
             {!feedback ? (
               <>
                 <input
-                  type="text"
-                  value={userAnswer}
-                  onChange={e => setUserAnswer(e.target.value)}
-                  className="border p-2 rounded w-full"
-                  disabled={timeExpired}
-                  autoFocus
-                />
+  type="text"
+  value={userAnswer}
+  onChange={e => setUserAnswer(e.target.value)}
+  onKeyDown={(e) => {
+    if (e.key === 'Enter') {
+      if (!feedback && !timeExpired && !showResult) {
+        handleSubmit();
+      }
+    }
+  }}
+  className="border p-2 rounded w-full"
+  disabled={timeExpired}
+  autoFocus
+/>
                 <button
                   onClick={handleSubmit}
                   className="bg-orange-400 hover:bg-orange-500 text-white font-bold mt-4 py-2 px-6 rounded"
@@ -201,11 +218,14 @@ useEffect(() => {
                 <div className="italic text-gray-700">{feedback.snark}</div>
                 <div className="text-sm text-gray-500 mt-2">{feedback.explanation}</div>
                 <button
-                  onClick={handleNext}
-                  className="bg-blue-400 hover:bg-blue-500 text-white font-bold mt-4 py-2 px-6 rounded"
-                >
-                  Next Question
-                </button>
+                   onClick={handleNext}
+                   onKeyDown={(e) => {
+                     if (e.key === 'Enter') handleNext();
+                   }}
+                   className="bg-blue-400 hover:bg-blue-500 text-white font-bold mt-4 py-2 px-6 rounded"
+                 >
+                   Next Question
+                 </button>
               </div>
             )}
           </div>

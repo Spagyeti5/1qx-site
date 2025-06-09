@@ -46,6 +46,9 @@ useEffect(() => {
 	  <Link to="/misunderstood-phrases" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
 	    Misunderstood Phrases Quiz
         </Link>
+	  <Link to="/galactic-intelligence-survey/easy" className="bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-xl text-center">
+	    Galactic Intelligence Survey
+        </Link>
       </div>
       <div className="text-center mt-6">
         <Link to="/">
