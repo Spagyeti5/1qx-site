@@ -55,7 +55,9 @@ const blogContent = {
         </Link>{" "}
         - match pairs and find hidden treasure in a fun, pirate-themed challenge! We also have other fun games to test and enhance your puzzle-solving abilities.
       </p>
-
+<p>
+In creating the Pirate Memory Game I found noticible improvements in my memory. I was surprised at how I was able to remember the location of the symbols the more I played the game, and it only took a few days for noticible improvements in my speed at clearing the pairs to start to become apparent. If you want to see improvements in your short-term recall, give this simple game a try.
+</p>
       <h2 className="text-xl font-bold mt-6 mb-2">✅ Tips to Keep Your Brain Fit</h2>
       <ul className="list-disc list-inside space-y-2 ml-4">
         <li>Play daily - even 10–15 minutes helps</li>

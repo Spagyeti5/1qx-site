@@ -877,7 +877,7 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "diabolical",
   question: "A train departs at 09:15 and arrives at 13:40. How long was the journey?",
-  answer: "4 hours 25 minutes",
+  answer: ["4 hours 25 minutes", "4 hours and 25 minutes", "4 hours, 25 minutes", "4:25"],
   explanation: "13:40 - 09:15 = 4 hours and 25 minutes."
 },
 {
