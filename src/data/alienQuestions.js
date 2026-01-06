@@ -568,7 +568,7 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "medium",
   question: "A shop offers 3 for £1.50. How much do 6 items cost?",
-  answer: [3, "3.00"],
+  answer: ["3", "3.00", "£3"],
   explanation: "Each group of 3 costs £1.50. Two groups = £3.00.",
   prefix: "£"
 },
@@ -707,7 +707,7 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "hard",
   question: "A car is sold for £6000 at a 20% loss. What was the original price?",
-  answer: 7500,
+  answer: ["7500", "7,500"],
   explanation: "Let x be the original price. x - 0.20x = 6000 → 0.80x = 6000 → x = 7500.",
   prefix: "£"
 },
@@ -729,7 +729,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "medium",
   question: "A farmer has 17 sheep. All but 9 run away. How many are left?",
-  answer: 9,
+  answer: ["9", "nine"],
   explanation: "All but 9 ran away, so 9 are left."
 },
 {
@@ -799,7 +799,7 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "hard",
   question: "A £90 item is reduced by 10%, then 10% again. What is the final price?",
-  answer: [72.9, "72.90"],
+  answer: ["72.9", "72.90"],
   explanation: "£90 → £81 after first 10%, then £81 - 8.10 = £72.90.",
   prefix: "£"
 },
@@ -856,7 +856,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "medium",
   question: "A man has 4 daughters. Each daughter has a brother. How many children does he have?",
-  answer: 5,
+  answer: ["5", "five"],
   explanation: "All daughters share the same one brother. 4 daughters + 1 brother = 5 children."
 },
 {
