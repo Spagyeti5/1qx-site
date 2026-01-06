@@ -954,7 +954,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "medium",
   question: "In a 31-day month, with Tuesday on the 1st, how many Tuesdays are there in the month?",
-  answer: "tuesday",
+  answer: ["5", "five"],
   explanation: "A 31-day month with a Tuesday on the 1st will have Tuesdays on 1, 8, 15, 22, and 29 → 5 total."
 },
 {
