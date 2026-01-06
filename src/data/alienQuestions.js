@@ -25,14 +25,14 @@ const alienQuestions = [
     type: "logic",
     difficulty: "easy",
     question: "You see 10 birds on a wire. You scare one and it flies away. How many are left?",
-    answer: 0,
+    answer: ["0", "none", "zero"],
     explanation: "If you scare one, the rest will likely fly away too."
   },
   {
     type: "logic",
     difficulty: "medium",
     question: "A bat and a ball cost £1.10 in total. The bat costs £1 more than the ball. How much does the ball cost?",
-    answer: 0.05,
+    answer: ["0.05", "5p", "0.05p", "5 pence", "£0.05", "£0.05p"],
     explanation: "£0.05 for the ball, £1.05 for the bat. Total = £1.10.",
     prefix: "£"
   },
@@ -319,7 +319,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "easy",
   question: "Which number is larger: 1/2 or 1/3?",
-  answer: "1/2",
+  answer: ["1/2", "half"],
   explanation: "1/2 is greater than 1/3."
 },
 {
@@ -397,7 +397,7 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "medium",
   question: "If 5 machines take 5 minutes to make 5 widgets, how long would 100 machines take to make 100 widgets?",
-  answer: 5,
+  answer: ["5", "5 minutes", "five", "five minutes", "5 mins", "5 min", "5m"],
   explanation: "Each machine takes 5 minutes per widget. 100 machines still take 5 minutes to make 100 widgets in parallel."
 },
 {
@@ -411,7 +411,7 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "medium",
   question: "If a car travels 60 miles in 1.5 hours, what is its average speed in mph?",
-  answer: [40, "40 mph", "40mph"],
+  answer: ["40", "40 mph", "40mph"],
   explanation: "Speed = distance ÷ time = 60 ÷ 1.5 = 40 mph."
 },
 {
@@ -669,7 +669,7 @@ const alienQuestions = [
   type: "numerical",
   difficulty: "hard",
   question: "You invest £1000 at 5% compound interest per year. How much after 3 years?",
-  answer: [1157.63, "1158"],
+  answer: ["1157.63", "1158"],
   explanation: "1000×1.05^3 = 1157.63 (rounded to 2 decimal places).",
   prefix: "£"
 },
@@ -692,7 +692,7 @@ const alienQuestions = [
   type: "logic",
   difficulty: "hard",
   question: "Three people check into a hotel room costing £30. They each pay £10. Later the hotel realises the room is only £25 and sends £5 back. The bellboy keeps £2 and gives £1 back to each guest. Each paid £9, totalling £27. Where’s the missing pound?",
-  answer: ["there is no missing pound", "nothing is missing", "nowhere"],
+  answer: ["there is no missing pound", "nothing is missing", "nowhere", "it isn't missing"],
   explanation: "It's a trick of wording. £27 = £25 (room) + £2 (bellboy)."
 },
 {
@@ -953,7 +953,7 @@ const alienQuestions = [
 {
   type: "logic",
   difficulty: "medium",
-  question: "In a 31-day month, on which day of the week is the 5th Tuesday?",
+  question: "In a 31-day month, with Tuesday on the 1st, how many Tuesdays are there in the month?",
   answer: "tuesday",
   explanation: "A 31-day month with a Tuesday on the 1st will have Tuesdays on 1, 8, 15, 22, and 29 → 5 total."
 },
